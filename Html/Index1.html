@@ -1,0 +1,220 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShoeStyle.com</title>
+        <link rel="stylesheet" href="/Css/styles1.css">
+        <link rel="icon" type="Image/png" href="/Iconos/ZZ.png">
+        <script src="/Js/Funciones.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="splash-screen">
+            <img src="/Imagenes/portada.jpg" alt="Splash Image">
+        </div>
+    
+        <header>
+            <nav>
+                <div id="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="search-button">Buscar</button>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li class="submenu"><a href="#">Sobre Nosotros</a>
+                        <ul class="submenu-content">
+                            <li><a href="/Html/Historia.html">Historia</a></li>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="#">Contacto</a>
+                        <ul class="submenu-content">
+                            <li><a href="#">Ubicación</a></li>
+                            <li><a href="#">Horarios</a></li>
+                            <li><a href="#">Formulario de Contacto</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="#">Damas</a>
+                        <ul class="submenu-content">
+                            <li><a href="/Html/VistaCatalogoMujer.html">Para Mujer</a></li>
+                            <li><a href="/Html/VistaCatalogoNiñas.html">Para Niñas</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="#">Caballeros</a>
+                        <ul class="submenu-content">
+                            <li><a href="/Html/VistaCatalogoHombre.html">Para Hombres</a></li>
+                            <li><a href="/Html/VistaCatlogoNiños.html">Para Niños</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <div class="icons">
+                    <a href="Login.htm" target="_blank"><img src="/Iconos/incLOG.png" alt="inicio"></a>
+                    <div class="divider"></div>
+                    <a href="#"><img src="/Iconos/incCAR.png" alt="Carrito"></a>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="hero-banner">
+                <div class="banner-content">
+                    <h1>Nuevas Colecciones</h1>
+                    <p>Descubre los últimos modelos de zapatos</p>
+                    <button type="button">Comprar Ahora</button>
+                </div>
+            </section>
+    
+            <!--seccion 2-->
+            <div class="contenedor">
+                <div class="image-contenedor">
+                    <img src="/Imagenes/persona1.jpg" alt="Imagen" class="vertical-imagen">
+                </div>
+                <div class="texto-contenedor">
+                    <h2 class="titulo">¡Deslumbra con Cada Paso! Encuentra tu Estilo Único en Zapatos de Vanguardia</h2>
+                    <p class="paragraph">"¿Estás listo para elevar tu estilo a nuevas alturas? En nuestra tienda de calzado, te invitamos
+                        a explorar un mundo de moda y elegancia donde cada zapato cuenta una historia. Desde audaces
+                        botas hasta sofisticados tacones, nuestra colección te ofrece la oportunidad de destacarte con
+                        cada paso que das. Rompe las reglas, desafía lo convencional y abraza tu individualidad con
+                        nuestra selección de zapatos de vanguardia. No esperes más para expresar tu verdadero yo.
+                        ¡Descubre tu estilo único hoy mismo y haz una declaración con cada paso!"</p>
+                    <a href="#" class="botn">Saber más</a>
+                </div>
+            </div>
+            <!--fin de seccion 2-->
+    
+            <!--seccion 3-->
+            <section class="seccion3">
+                <div class="image-container">
+                    <img src="/Imagenes/calzado1.png" alt="Imagen 1">
+                    <div class="image-info">
+                        <h3>Título de la Imagen 1</h3>
+                        <p>Descripción breve de la Imagen 1</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="/Imagenes/calzadoC2.jpg" alt="Imagen 2">
+                    <div class="image-info">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/Imagenes/calzado1-mobile.png">
+                            <source media="(max-width: 1023px)" srcset="/Imagenes/calzado1-tablet.png">
+                            <h3>Título de la Imagen 2</h3>
+                            <p>Descripción breve de la Imagen 2</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </picture>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="/Imagenes/calzado1-mobile.png">
+                        <source media="(max-width: 1023px)" srcset="/Imagenes/calzado1-tablet.png">
+                        <img src="/Imagenes/calzado3.jpg" alt="Imagen 3">
+                    </picture>
+                    <div class="image-info">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/Imagenes/calzado1-mobile.png">
+                            <source media="(max-width: 1023px)" srcset="/Imagenes/calzado1-tablet.png">
+                            <h3>Título de la Imagen 3</h3>
+                            <p>Descripción breve de la Imagen 3</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!--fin seccion 3-->
+    
+            <!--seccion 4-->
+            <section class="image-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="/Imagenes/calzadoC.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/Imagenes/calzadoC1.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/Imagenes/calsadofondoblanco.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/Imagenes/calsadofondoblan.jpg" alt="Imagen 3">
+                    </div>
+                    <!-- Agrega más diapositivas de imágenes aquí -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button>
+                </div>
+            </section>
+            <!--fin seccion 4-->
+    
+            <!-- seccion 5 -->
+            <section class="content-section">
+                <div class="content-wrapper">
+                    <div class="image-container">
+                        <img src="/Imagenes/fondo3.jpg" alt="Imagen" class="vertical-image">
+                    </div>
+                    <div class="text-container">
+                        <h2>¡Da Pasos de Confianza con Nuestro Calzado Exclusivo!</h2>
+                        <p>"Haz cada paso una oportunidad para brillar. Con nuestros zapatos, cada paso que des será un paso
+                            hacia adelante en tu camino hacia el éxito. Desde los elegantes tacones hasta las cómodas
+                            zapatillas, nuestra colección está diseñada para llevar tu estilo y tu confianza al siguiente
+                            nivel. ¡Camina con fuerza, camina con estilo, camina con nosotros! Descubre tu par perfecto y
+                            prepárate para conquistar el mundo, un paso a la vez..</p>
+                        <a href="#" class="btn">Ir a registro</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fin de seccion 5 -->
+        </main>
+    
+        <!-- pie de pagina-->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>INFORMACION</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>CONTACTO</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Dirección</a></li>
+                        <li><a href="#">Correo Electrónico</a></li>
+                        
+    
+    <li><a href="#">Teléfono</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>SIGUENOS</h3>
+                    <hr>
+                    <ul class="social-icons">
+                        <li><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank"><img
+                                    src="/Iconos/icnFB.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="/Iconos/incTW.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="/Iconos/incINT.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                <section class="imgfooter">
+    
+                </section>
+            </div>
+        </footer>
+        <div class="foo">
+            <p>&copy; 2024 Tienda de Zapatos Online. Todos los derechos reservados.</p>
+        </div>
+    </body>
+    
+    </html>
+    

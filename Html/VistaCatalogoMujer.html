@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Calzado</title>
+    <link rel="stylesheet" href="/Css/StyleVcatlogo1.css">
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <!-- Aquí puedes agregar tu menú existente -->
+
+            <style>
+                .sidenav {
+                    height: 100%;
+                    width: 200px;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: #202020;
+                    overflow-x: hidden;
+                    padding-top: 20px;
+                    transition: 0.5s;
+                }
+        
+                .sidenav a {
+                    padding: 6px 8px 6px 16px;
+                    text-decoration: none;
+                    color: #7d7979;
+                    font-size: 18px;
+                    background-color: #202020;
+                    display: block;
+                }
+        
+                .sidenav a:hover {
+                    color: #ff4d00;
+                }
+        
+                #main {
+                    transition: margin-left .5s;
+                    padding: 16px;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/Html/Index1.html">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#team">Team</a>
+        </div>
+        
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+            <h2></h2>
+            <p></p>
+        </div>
+        
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+   <!-- fin menu -->
+
+        </nav>
+
+        <main>
+            <div class="product-catalog">
+                <!-- Agrega tus imágenes de productos aquí -->
+            </div>
+        </main>
+    </div>
+
+    <div class="product-details" style="display: none;">
+        <div class="product-info">
+            <img src="" alt="" class="product-image">
+            <div class="product-details-content">
+                <h2 class="product-name"></h2>
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+                <button class="buy-button" data-id="1" href="/Html/VistaPago.html">Comprar</button>
+                <button class="add-to-cart-button">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <script src="/Js/FuncionVcatalogoMujer.js"></script>
+
+
+       </div>
+           
+        </div>
+     <!-- pie de pagina-->
+    <div class="foo">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>INFORMACION</h3>
+                <hr>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <hr>
+                <ul>
+                    <li><a href="#">Dirección</a></li>
+                    <li><a href="#">Correo Electrónico</a></li>
+                    <li><a href="#">Teléfono</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SIGUENOS</h3>
+                <hr>
+                <ul class="social-icons">
+                    <li><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank"><img
+                                src="/Iconos/icnFB.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/Iconos/incTW.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/Iconos/incINT.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        <section class="imgfooter">
+           </section>
+        </div>
+        <div>
+        <p>&copy; 2024 Tienda de Zapatos Online. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>

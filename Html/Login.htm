@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/stylesLOGIN.css">
+    <title>Inicio de Sesión</title>
+    <style>
+        body {
+            background-image: url('/Imagenes/imglogin1.jpg');
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            transition: background-image 1s ease;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input, .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            background-color: #170b37;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form>
+        <input type="text" placeholder="Usuario" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+        <a href="#">Olvidaste la Contraseña?</a> <br>
+        <a href="#">Registrate aqui...</a>
+    </form>
+</div>
+
+
+</body>
+</html>
